@@ -16,6 +16,8 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/animate.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -23,17 +25,17 @@
 </head>
 <body class="{{body_class}} nav-closed">
 
-    {{navigation}}
+    <!--{{navigation}}-->
 
     <div class="site-wrapper">
 
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+        <!--<footer class="site-footer clearfix">-->
+            <!--<section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>-->
+            <!--<section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>-->
+        <!--</footer>-->
 
     </div>
 
@@ -41,7 +43,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
-
+    <script src="/core/client/bower_components/typed.js/dist/typed.min.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
